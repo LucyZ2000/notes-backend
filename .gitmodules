@@ -1,0 +1,6 @@
+[submodule "notes-app-ui"]
+	path = notes-app-ui
+	url = https://github.com/LucyZ2000/notes-frontend.git
+[submodule "notes-app-server"]
+	path = notes-app-server
+	url = https://github.com/LucyZ2000/notes-backend.git
