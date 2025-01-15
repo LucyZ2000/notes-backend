@@ -75,7 +75,9 @@ app.delete("/api/notes/:id", async (req, res) => {
     }
 });
 
-app.listen(5000, () => {
-    console.log("server running on localhost:5000");
-});
+const port = process.env.PORT || 5000;  // Use dynamic port if available, otherwise fallback to 5000
+const host = '0.0.0.0';  // Bind to all network interfaces
 
+app.listen(port, host, () => {
+    console.log(`Server running on http://${host}:${port}`);
+});
